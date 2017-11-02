@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="exercice4.css"/>
+  <script src="jquery-3.2.1.js"></script>
+  <meta charset="utf-8"/>
+  <title>exercice 4</title>
+</head>
+<body>
+  <button type="button" id="height">hauteur +</button>
+  <button type="button" id="green">vert</button>
+  <button type="button" id="basicColor">couleur initiale</button>
+  <button type="button" id="hide">hide</button>
+  <button type="button" id="show">show</button><br/><br/>
+  <div id="figure"></div>
+  <script>
+   $('#height').click(function() {
+    if ($('#figure').height() <= 100) {
+      $('#figure').css('height', '+=10px');
+    } else {
+      $('#figure').css('height', '10px');
+    }
+  });
+  $('#green').click(function() {
+    $('#figure').css('background-color', 'green');
+  });
+  $('#basicColor').click(function() {
+    $('#figure').css('background-color', 'orange');
+  });
+  $('#hide').click(function() {
+    $('#figure').hide();
+  });
+  $('#show').click(function() {
+    $('#figure').show();
+  });
+  </script>
+</body>
+</html>
